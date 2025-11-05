@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using ZooPal.Animal;
+using ZooPal.Animal.ZooPal.Animals;
+using ZooPal.Animals;
 
 namespace ZooPal.Animals
 {
-    internal class Elephant :Mammal
+    internal class Elephant : Mammal
     {
 
         public double TrunkLength;
@@ -19,31 +22,35 @@ namespace ZooPal.Animals
             this.TrunkLength = trunkLength;
             this.TuskLength = tuskLength;
         }
-        
-        /*
+
         public string MakeSound()
         {
-
+            return "Trumpet!";
         }
 
         public string GetDietType()
         {
-
+            return "Herbivore";
         }
+        /*
+                public double GetFoodAmount()
+                {
+                    return weight * 0.05;
+                }
+                public void Feed()
+                {
+                    Console.WriteLine($"{Name} the elephant has been fed {GetFoodAmount()} kg of hay.");
+                }
 
-        public double GetFoodAmount()
-        {
+                public void DisplayInfo()
+                {
+                    Console.WriteLine($"Name: {Name}, Age: {Age}, Weight: {Weight} kg");
+                    Console.WriteLine($"Trunk Length: {TrunkLength}, Tusk Length: {TuskLength}");
+                    Console.WriteLine($"Habitat: {HabitatType}");
+                }
 
-        }
-        public void Feed()
-        {
 
-        }
 
-        public void DisplayInfo()
-        {
-
-        }
-        */
+                */
     }
 }
