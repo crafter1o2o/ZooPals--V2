@@ -28,7 +28,7 @@ namespace ZooPal
 
 
             //Create the Animal of choice
-            Animal Leo = new Lion("Leo", 5, 190.5, true, "Savannah", true, 100, 3,true);
+            Lion Leo = new Lion("Leo", 5, 190.5, true, "Savannah", true, 100, 3,true);
             Animal Ella = new Elephant("Ella", 10, new Random().Next(2000, 6000), true, "Grassland", true, 640, 2.0, 1.5);
             Animal Corrie = new Eagle("Corrie", 4, 15.0, true, "Mountains", true, 2.0, 320.0, 8.0, 4);
             Animal Koda  = new Crocodile("Koda", 7, 500.0, true, "Swamp", true, false, 5, 2000.0, 60);
@@ -162,10 +162,7 @@ namespace ZooPal
 
                     case "6":
 
-                        Animal.MakeSound();
-                        Mammal.MakeSound();
-                        Lion.MakeSound();
-                        Console.Clear();
+
                         //Demonstrate Polymorphism
 
 
@@ -197,22 +194,7 @@ namespace ZooPal
             }
         }
 
-        static void DemonstratePolyMorphism()
-        {
-            Console.WriteLine("Polymorphism");
-            foreach (var animal in preserve.Animals)
-            {
-                ProcessAnimalPolymorphism(animal);
-            }
-        }
 
-        static void ProcessAnimalPolymorphism(Animal animal)
-        {
-            Console.WriteLine($"\nProcessing {animal.Name} ({animal.GetType().Name}):");
-            animal.MakeSound();
-            animal.GetDietType();
-            animal.Feed();
-        }
 
         public void DisplayAllAnimals()
         {
@@ -232,6 +214,9 @@ namespace ZooPal
 
         public void EmergencyEvacuation()
         {
+            Console.WriteLine("A Fire Has Broken Out! Evacuate All Animals To Safety!");
+            Console.WriteLine("Evacuating Animals...");
+            Console.WriteLine("Evacuation Complete!");
 
         }
     }
