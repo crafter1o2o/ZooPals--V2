@@ -8,12 +8,13 @@ namespace ZooPals.Animal
 {
     internal class Penguin : Bird
     {
-        public double SwimSpeed;
-        public int ColonySize;
+        public double SwimSpeed { get; set; }
+        public int ColonySize { get; set; }
 
-        public Penguin(string name, int age, double weight, int ColonySize)
+        public Penguin(string name, int age, double weight, int ColonySize, double swim)
         {
-
+            this.SwimSpeed = swim;
+            this.ColonySize = ColonySize;
         }
 
         public string MakeSound()
