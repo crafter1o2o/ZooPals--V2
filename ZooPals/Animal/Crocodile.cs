@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace ZooPal.Animals
+namespace ZooPals.Animal
 {
 
 	internal class Crocodile : Reptile
@@ -13,8 +13,7 @@ namespace ZooPal.Animals
         public double BiteForce;
         public int TeethCount;
 
-        public Crocodile(String name, int age, double weight, bool healthy, String habitat, bool isColdBlooded, bool hasScales, double biteforce, int teethCount)
-        : base(name, age, weight, healthy, habitat, isColdBlooded, hasScales)
+        public Crocodile(String name, int age, double weight, bool healthy, String habitat, bool isColdBlooded, bool hasScales, double biteforce, int teethCount): base(name, age, weight, healthy, habitat, isColdBlooded, hasScales)
 		{
 			this.BiteForce = biteforce;
 			this.TeethCount = teethCount;

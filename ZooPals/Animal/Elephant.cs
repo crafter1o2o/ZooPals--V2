@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using ZooPal.Animal;
-using ZooPal.Animal.ZooPal.Animals;
+using ZooPals.Animal;
+using ZooPals.Animal.ZooPal.Animals;
 using ZooPal.Animals;
 
 namespace ZooPals.Animal
@@ -16,8 +16,7 @@ namespace ZooPals.Animal
         public double TrunkLength;
         public double TuskLength;
 
-        public Elephant(String name, int age, double weight,bool isHealthy, String habitat, bool isSocial, int gestationDays, double trunkLength, double tuskLength): 
-                    base(name, age, weight, isHealthy, habitat, isSocial, gestationDays)
+        public Elephant(String name, int age, double weight,bool isHealthy, String habitat, bool isSocial, int gestationDays, double trunkLength, double tuskLength): base(name, age, weight, isHealthy, habitat, isSocial, gestationDays)
         {
             this.TrunkLength = trunkLength;
             this.TuskLength = tuskLength;

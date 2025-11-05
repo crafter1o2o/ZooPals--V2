@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ZooPals.Animals;
+using ZooPals.Animal;
 
 namespace ZooPals.Animal
 {
