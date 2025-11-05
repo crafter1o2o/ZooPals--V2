@@ -7,28 +7,27 @@ namespace ZooPals.Habitat
     {
         public double WaterVolume;
         public double SalinityLevel;
+        public bool hasUnderwaterViewing;
         public bool HasUnderWaterViewing;
 
-        public Aquarium(double waterVolume, double salinityLevel, bool hasUnderWaterViewing) :base(string name, string, int capacity, double temperature, double size)
+        public Aquarium(string name, string type, int capacity, double temperature, double size, double WaterVolume, double SalinityLevel, bool hasUnderwaterViewing)
+            : base(name, type, capacity, temperature, size)
         {
-            WaterVolume = waterVolume;
-            SalinityLevel = salinityLevel;
-            HasUnderWaterViewing = hasUnderWaterViewing;
+            this.WaterVolume = WaterVolume;
+            this.SalinityLevel = SalinityLevel;
+            this.hasUnderwaterViewing = HasUnderWaterViewing;
         }
 
-        public bool CanAccommodate(Animal animal)
+        public void AddAnimal()
         {
-
+             
         }
-
-        public void AddAnimal(Animal animal)
+        override
+            public void DisplayInfo()
         {
-
-        }
-
-        public void DisplayInfo()
-        {
-
+            base.DisplayInfo();
+            Console.WriteLine($"Water Volume: {WaterVolume} liters, Salinity Level: {SalinityLevel} ppt, Underwater Viewing: {HasUnderWaterViewing}");
+            return;
         }
 
         public void PerformMaintenance()

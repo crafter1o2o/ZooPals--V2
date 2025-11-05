@@ -19,6 +19,17 @@ namespace ZooPals.Animal
             this.EggsPerYear = EggsPerYear;
         }
 
+        public override void MakeSound()
+        {
+            Console.WriteLine("Chirp!");
+            return;
+        }
+
+        override public void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"Can Fly: {canFly}, Wing Span: {wingSpan}, Eggs Per Year: {EggsPerYear}");
+
+        }
     }
 }
-       

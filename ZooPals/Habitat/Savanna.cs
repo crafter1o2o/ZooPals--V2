@@ -12,26 +12,30 @@ namespace ZooPals.Habitat
         public double GrasslandArea;
         public int WaterHoles;
 
-        public Savanna(string name, int capacity, double size)
+        public Savanna(string name, string type, int capacity, double temperature, double size, double GrasslandArea, int WaterHoles) : base(name, type, capacity, temperature, size)
         {
-            this.Name = name;
-            this.Capacity = capacity;
-            this.Size = size;
+            this.GrasslandArea = GrasslandArea;
+            this.WaterHoles = WaterHoles;
+            
             return;
         }
 
-        public CanAccommodate(Animal animal, double size)
+        override
+            public void CanAccommodate()
         {
-            return true;
+            bool CanAccommodate = true;
+            return;
         }
 
         public void AddAnimal()
         {
             
         }
-
+        override
         public void DisplayInfo()
         {
+            base.DisplayInfo();
+            Console.WriteLine($"Grassland Area: {GrasslandArea}, Water Holes: {WaterHoles}");
 
         }
 

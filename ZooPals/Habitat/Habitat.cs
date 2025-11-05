@@ -18,19 +18,19 @@ namespace ZooPals.Habitat
 
         }
 
-        public bool CanAccommodate(Animal animal)
+        public virtual void CanAccommodate()
         {
 
         }
 
-        public void AddAnimal(Animal animal)
+        public void AddAnimal()
         {
             
         }
 
-        public void DisplayInfo()
+        public virtual void DisplayInfo()
         {
-
+            Console.WriteLine($"Habitat Name: {Name}, Type: {Type}, Capacity: {Capacity}, Temperature: {Temperature}, Size: {Size}");
         }
 
         public void PerformMaintenance()
