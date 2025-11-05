@@ -35,6 +35,17 @@ namespace ZooPals.Animal
             return Weight * 0.25;
         }
 
+        public void setName(string name)
+        {
+            Name = name;
+            return;
+        }
+
+        public string getName()
+        {
+            return Name;
+        }
+
         public void Feed()
         {
             Console.WriteLine($"{Name} the lion has been fed {GetFoodAmount()} kg of meat.");
