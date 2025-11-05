@@ -4,18 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZooPal.Animals
+namespace ZooPals.Animal
 {
-    internal class Reptile : Animal
+    public abstract class Reptile : Animals
     {
-        bool isColdBlooded;
-        bool hasScales;
+        public bool isColdBlooded;
+        public bool isVenomous;
+        public int SheddingFrequency;
 
-        public Reptile(String name, int age, double weight, bool healthy, String habitat, bool isColdBlooded, bool hasScales)
-            : base(name, age, weight, healthy, habitat)
+        public Reptile(String name, int age, double weight, bool isVenomous, bool isHealthy, DateTime lastFed, String habitat, bool isColdBlooded, bool Venomous, int shedRate) : base(name, age, weight, isHealthy, lastFed, habitat)
         {
             this.isColdBlooded = isColdBlooded;
-            this.hasScales = hasScales;
+            this.isVenomous = Venomous;
+            this.SheddingFrequency = shedRate;
         }
     }
 }
