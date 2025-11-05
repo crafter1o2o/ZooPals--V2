@@ -31,25 +31,23 @@ namespace ZooPals.Animal
         {
             return "Herbivore";
         }
-        /*
-                public double GetFoodAmount()
-                {
-                    return weight * 0.05;
-                }
-                public void Feed()
-                {
-                    Console.WriteLine($"{Name} the elephant has been fed {GetFoodAmount()} kg of hay.");
-                }
-
-                public void DisplayInfo()
-                {
-                    Console.WriteLine($"Name: {Name}, Age: {Age}, Weight: {Weight} kg");
-                    Console.WriteLine($"Trunk Length: {TrunkLength}, Tusk Length: {TuskLength}");
-                    Console.WriteLine($"Habitat: {HabitatType}");
-                }
+        public double GetFoodAmount()
+        {
+            return 5;
+        }
+        public void Feed()
+        {
+            Console.WriteLine($"{Name} the elephant has been fed {GetFoodAmount()} kg of hay.");
+        }
+  
+        public void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"Trunk Length: {TrunkLength}, Tusk Length: {TuskLength}");
+        }
 
 
 
-                */
+                
     }
 }

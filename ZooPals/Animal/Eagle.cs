@@ -42,6 +42,8 @@ namespace ZooPals.Animal
 
         public void DisplayInfo()
         {
+            base.DisplayInfo();
+            Console.WriteLine($"Dive Speed: {DiveSpeed}, Visual Acuity: {VisualAcuity}");
 
         }
     }

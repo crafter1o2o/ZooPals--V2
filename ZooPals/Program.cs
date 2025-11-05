@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ZooPal;
 using ZooPals.Animal;
+using ZooPals.Habitat;
 
 
 
@@ -32,13 +33,14 @@ namespace ZooPal
             Animal Corrie = new Eagle("Corrie", 4, 15.0, true, "Mountains", true, 2.0, 320.0, 8.0, 4);
             Animal Koda  = new Crocodile("Koda", 7, 500.0, true, "Swamp", true, false, 5, 2000.0, 60);
             Animal Manny = new Penguin("Manny", 3, 30.0, true, "Arctic", false, 0.5, 20, 10.0, 50);
-            
-            Leo.DisplayInfo();
-            Ella.DisplayInfo();
-            Corrie.DisplayInfo();
-            Koda.DisplayInfo();
-            Manny.DisplayInfo();
-            
+
+            //Setup Habitats 
+            ///TS was done at 10:32 pm. KILL ME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            Habitat Sav = new Savanna("Savanna", "Open Area", 5, 86.0, 123.45, 54.87,3);
+            Habitat Air = new Aviary("Avairay","Building", 8, 77.0, 8000.0, 4000.00, 40, true);
+            Habitat Swa = new Aquarium("Swamp", "Wetland", 4, 75.0, 6000.0, 12.0,0.0,true);
+
+
 
             //Add the animal to the list
             ///I Unfortunately don't know how to automatically add animals to habitats yet, so for now it's manual. -PCB
@@ -87,29 +89,64 @@ namespace ZooPal
                 switch (userInput1)
                 {
                     case "1":
-                        for (int i = 0; i < listAnimals.Count(); i++)
-                        {
-                            Console.WriteLine(listAnimals[i]);
-                        }
-
                         //Display Animals
+                        Leo.DisplayInfo();
+                        Ella.DisplayInfo();
+                        Corrie.DisplayInfo();
+                        Koda.DisplayInfo();
+                        Manny.DisplayInfo();
+
+
+
+
+
                         userInput = Console.ReadLine();
                         Console.Clear();
                         break;
-                    case "2":
-                        //Display Habitats
 
+
+
+
+
+                    case "2":
+                        Sav.DisplayInfo();
+                        Air.DisplayInfo(); 
+                        Swa.DisplayInfo();
+                    
+                        
+                        
+                        
+                        
+                        //Display Habitats
+                        userInput = Console.ReadLine();
                         Console.Clear();
                         //Console.WriteLine(savannahHabitat.displayInfo());
                         //Currently, no animals being made are being adding animals to habitat, fix that somehow, figuture it out soon.
                         break;
+                    
+                    
+                    
+                    
                     case "3":
+                        Ella.Feed();
+                        Leo.Feed();
+                        Corrie.Feed();                        
+                        Koda.Feed();
+                        Manny.Feed();
 
+                        userInput = Console.ReadLine();
                         Console.Clear();
                         //Feed All Animals
                         break;
                     case "4":
+                        Ella.PerformHealthCheck();
+                        Leo.PerformHealthCheck();
+                        Corrie.PerformHealthCheck();
+                        Koda.PerformHealthCheck();
+                        Manny.PerformHealthCheck();
 
+
+                        userInput = Console.ReadLine();
                         Console.Clear();
                         //Perform Health Checks
                         break;

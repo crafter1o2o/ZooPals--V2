@@ -9,12 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Habitat\**" />
-    <EmbeddedResource Remove="Habitat\**" />
-    <None Remove="Habitat\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Remove="Animal\Bear.cs" />
   </ItemGroup>
 

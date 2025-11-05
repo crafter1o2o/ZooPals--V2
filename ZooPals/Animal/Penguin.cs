@@ -38,7 +38,8 @@ namespace ZooPals.Animal
 
         public void DisplayInfo()
         {
-
+            base.DisplayInfo();
+            Console.WriteLine($"Swim Speed: {SwimSpeed}, Colony Size: {ColonySize}");
         }
 
     }

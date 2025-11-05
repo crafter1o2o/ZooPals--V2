@@ -41,8 +41,9 @@ namespace ZooPals.Animal
 		}
 		public void DisplayInfo()
 		{
-
-		}
+			base.DisplayInfo();
+			Console.WriteLine($"Bite Force: {BiteForce}, Teeth Count: {TeethCount}");
+        }
 
 	}
 }
