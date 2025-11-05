@@ -1,53 +1,53 @@
 ﻿using System;
 
-namespace ZooPal.Animals
+namespace ZooPal
 {
     internal class Animal
     {
-        // Backing fields for properties to avoid ambiguity
-        public readonly string _name;
-        public readonly int _age;
-        public readonly double _weight;
-        public bool _isHealthy;
-        public readonly string _habitatType;
+        public string Name;
+        public int Age;
+        public double Weight;
+        public bool IsHealthy;
+        public DateTime LastFedTime;
+        public string HabitatType;
 
-        // Properties for the Animal class
-        public string Name => _name;
-        public int Age => _age;
-        public double Weight => _weight;
-        public bool IsHealthy => _isHealthy;
-        public string HabitatType => _habitatType;
-
-        // Constructor
-        public Animal(string name, int age, double weight, bool isHealthy, string habitatType)
+        public Animal(string name, int age, double weight, bool IsHealthy, string HabitatType)
         {
-            _name = name;
-            _age = age;
-            _weight = weight;
-            _isHealthy = isHealthy;
-            _habitatType = habitatType;
+            this.Name = name;
+            this.Age = age;
+            this.Weight = weight;
+            this.IsHealthy = IsHealthy;
+            this.HabitatType = HabitatType;
         }
 
-        // Method to display the animal's information
-        public void DisplayInfo()
+        public string MakeSound()
         {
-            Console.WriteLine(
-                $"Name: {_name}, Age: {_age}, Weight: {_weight} kg, Healthy: {_isHealthy},  Habitat: {_habitatType}"
-            );
+
         }
-        /*
+
+        public string GetDietType()
+        {
+
+        }
+
+        public double GetFoodAmount()
+        {
+
+        }
+
         public void Feed()
         {
-            _lastFed = DateTime.Now;
-            Console.WriteLine($"{_name} has been fed.");
-        }
-        */
 
-        public void UpdateHealth(bool healthStatus)
+        }
+
+        public void PerformHealthCheck()
         {
-            _isHealthy = healthStatus;
-            Console.WriteLine($"{_name}'s health status updated to: {_isHealthy}");
+
+        }
+
+        public void DisplayInfo()
+        {
+
         }
     }
 }
-
