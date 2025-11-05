@@ -92,7 +92,7 @@ namespace ZooPal
                 switch (userInput1)
                 {
                     case "1":
-                        //Display Animals
+                     //Display Animals
                         Leo.DisplayInfo();
                         Ella.DisplayInfo();
                         Corrie.DisplayInfo();
@@ -112,7 +112,7 @@ namespace ZooPal
 
 
                     case "2":
-                        //Display Habitats
+                    //Display Habitats
                         Sav.DisplayInfo();
                         Air.DisplayInfo(); 
                         Swa.DisplayInfo();
@@ -153,38 +153,36 @@ namespace ZooPal
                         break;
 
                         Console.Clear();
-                    //Add New Animal
+                    
                     case "5":
-
+                    //Add New Animal
                         Console.Clear();
-                        //Generate Daily Report
                         break;
 
                     case "6":
-
-                        Animal.MakeSound();
-                        Mammal.MakeSound();
-                        Lion.MakeSound();
-                        Console.Clear();
-                        //Demonstrate Polymorphism
+                    //Generate Daily Report
 
 
                         break;
                     case "7":
+                        //Demonstrate Polymorphism
+                        Leo.MakeSound();
+                        Ella.MakeSound();
+                        Corrie.MakeSound();
+                        Koda.MakeSound();
+                        Manny.MakeSound();
 
-                        Console.Clear();
-                        //Emergency Evacuation Drill
                         break;
                     case "8":
+                        //Emergency Evacuation Drill
+                        //EmergencyEvacuation();
 
                         Console.Clear();
 
                         break;
                     case "9":
-
-                        ///GOD DAMNIT! This stupid POS won't read this for some reason.
-                        ///10-22 FIXED IT!!! WOOOOOO!!! Also I did just change the case for this cause I finally realized I didn't make the Main Menu Properly-PCB
                         //Exit
+
                         Console.Clear();
                         Console.WriteLine("Exiting the program. Goodbye!");
                         isRunning = false;
@@ -197,23 +195,32 @@ namespace ZooPal
             }
         }
 
-        static void DemonstratePolyMorphism()
-        {
-            Console.WriteLine("Polymorphism");
-            foreach (var animal in preserve.Animals)
-            {
-                ProcessAnimalPolymorphism(animal);
-            }
-        }
+
 
         static void ProcessAnimalPolymorphism(Animal animal)
         {
             Console.WriteLine($"\nProcessing {animal.Name} ({animal.GetType().Name}):");
             animal.MakeSound();
-            animal.GetDietType();
             animal.Feed();
         }
+        
 
+       /* public void AddAnimal(Animal animal)
+        {
+            foreach (var habitat in Habitats)
+            {
+                if (habitat.CanAccommodate(animal))
+                {
+                    habitat.AddAnimal(animal);
+                    Animals.Add(animal);
+                    Console.WriteLine($"{animal.Name} Successfully added to {habitat.Name}.");
+                    return;
+                }
+
+            }
+            Console.WriteLine($"No suitable habitat found for {animal.Name}({animal.GetType().Name}).");
+        }
+       */
         public void DisplayAllAnimals()
         {
             
@@ -232,11 +239,9 @@ namespace ZooPal
 
         public void EmergencyEvacuation()
         {
+            Console.WriteLine($"A fire has been detected!");
+            Console.WriteLine($"{Lion} has been evacuated!");
 
         }
     }
 }
-
-
-
-
