@@ -1,38 +1,32 @@
 ﻿using System;
 
-namespace ZooPal.Animals
+namespace ZooPals.Animal
 {
     internal class Animal
     {
-        // Backing fields for properties to avoid ambiguity
-        public readonly string _name;
-        public readonly int _age;
-        public readonly double _weight;
-        public bool _isHealthy;
-        public readonly string _habitatType;
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public double Weight { get; set; }
 
-        // Properties for the Animal class
-        public string Name => _name;
-        public int Age => _age;
-        public double Weight => _weight;
-        public bool IsHealthy => _isHealthy;
-        public string HabitatType => _habitatType;
+        public bool IsHealthy = true;
+
+        public string? Habitat { get; set; }
 
         // Constructor
         public Animal(string name, int age, double weight, bool isHealthy, string habitatType)
         {
-            _name = name;
-            _age = age;
-            _weight = weight;
-            _isHealthy = isHealthy;
-            _habitatType = habitatType;
+            Name = name;
+            Age = age;
+            Weight = weight;
+            IsHealthy = isHealthy;
+            Habitat = habitatType;
         }
 
         // Make this method overridable by derived classes
         public virtual void DisplayInfo()
         {
             Console.WriteLine(
-                $"Name: {_name}, Age: {_age}, Weight: {_weight} kg, Healthy: {_isHealthy},  Habitat: {_habitatType}"
+                $"Name: {Name}, Age: {Age}, Weight: {Weight} kg, Healthy: {IsHealthy},  Habitat: {Habitat}"
             );
         }
 
@@ -44,28 +38,12 @@ namespace ZooPal.Animals
         public void PerformHealthCheck()
         {
 
-        public Animals(string name, int age, double weight, bool IsHealthy, string HabitatType)
-        {
-            this.Name = name;
-            this.Age = age;
-            this.Weight = weight;
-            this.IsHealthy = IsHealthy;
-            this.HabitatType = HabitatType;
         }
-        */
 
         public void UpdateHealth(bool healthStatus)
         {
-            _isHealthy = healthStatus;
-            Console.WriteLine($"{_name}'s health status updated to: {_isHealthy}");
+            IsHealthy = healthStatus;
+            Console.WriteLine($"{Name}'s health status updated to: {IsHealthy}");
         }
     }
 }
-
-        public void DisplayInfo()
-        {
-
-        }
-    }
-}
->>>>>>>>> Temporary merge branch 2

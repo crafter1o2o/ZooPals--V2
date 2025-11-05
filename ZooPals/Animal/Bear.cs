@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ZooPal.Animal.ZooPal.Animals;
 
-namespace ZooPal.Animals
+namespace ZooPals.Animal
 {
     internal class Bear : Mammal
     {

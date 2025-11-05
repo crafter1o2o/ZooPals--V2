@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZooPal.Animals
+namespace ZooPals.Animal
 {
     internal class Reptile : Animal
     {

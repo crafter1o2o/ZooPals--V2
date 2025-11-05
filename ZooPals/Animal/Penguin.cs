@@ -11,29 +11,29 @@ namespace ZooPals.Animal
         public double SwimSpeed;
         public int ColonySize;
 
-        public Penguin(string name, int age, double weight, int ColonySize)
+        public Penguin(String name, int age, double weight, bool healthy, String habitat, bool canFly, double wingSpan, int EggsPerYear, double SwimSpeed,int ColonySize):base (name, age, weight, healthy, habitat, canFly, wingSpan, EggsPerYear)
         {
-
+            this.SwimSpeed = SwimSpeed;
+            this.ColonySize = ColonySize;
         }
-
         public string MakeSound()
         {
-
+            return "Honk";
         }
 
         public string GetDietType()
         {
-
+            return "Fish";
         }
 
         public double GetFoodAmount()
         {
-
+            return Weight * 0.1;
         }
 
         public void Feed()
         {
-
+            Console.WriteLine($"{Name} the penguin has been fed {GetFoodAmount()} kg of fish.");
         }
 
         public void DisplayInfo()
