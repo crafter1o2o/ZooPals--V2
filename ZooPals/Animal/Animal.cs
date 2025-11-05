@@ -36,11 +36,14 @@ namespace ZooPal.Animals
             );
         }
 
-        /*
         public void Feed()
         {
-            _lastFed = DateTime.Now;
-            Console.WriteLine($"{_name} has been fed.");
+
+        }
+
+        public void PerformHealthCheck()
+        {
+
         }
         */
 

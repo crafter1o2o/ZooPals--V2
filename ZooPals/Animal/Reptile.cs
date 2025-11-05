@@ -8,14 +8,16 @@ namespace ZooPal.Animals
 {
     internal class Reptile : Animal
     {
-        bool isColdBlooded;
-        bool hasScales;
+        public bool isColdBlooded;
+        public bool isVenomous;
+        public int SheddingFrequency;
 
         public Reptile(String name, int age, double weight, bool healthy, String habitat, bool isColdBlooded, bool hasScales)
             : base(name, age, weight, healthy, habitat)
         {
             this.isColdBlooded = isColdBlooded;
-            this.hasScales = hasScales;
+            this.isVenomous = Venomous;
+            this.SheddingFrequency = shedRate;
         }
     }
 }

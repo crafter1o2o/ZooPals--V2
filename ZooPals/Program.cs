@@ -30,6 +30,7 @@ namespace ZooPal
             Animal Ella = new Elephant("Ella", 10, new Random().Next(2000, 6000), true, "Grassland", true, 640, 2.0, 1.5);
 
 
+
             //Add the animal to the list
             ///I Unfortunately don't know how to automatically add animals to habitats yet, so for now it's manual. -PCB
             ///
@@ -38,7 +39,7 @@ namespace ZooPal
 
 
 
-            
+
 
             //Create Habitats
             ///I will be figuring out how to add animals to habitats automatically later. For now, it's manual. -PCB

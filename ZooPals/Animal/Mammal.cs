@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+namespace ZooPal.Animal
 namespace ZooPal.Animals
 {
     internal class Mammal : Animal {
@@ -22,5 +23,10 @@ namespace ZooPal.Animals
             base.DisplayInfo();
             Console.WriteLine($"Is Social: {isSocial}, Gestation Days: {gestationDays}");
         }
+
+
+
+
+
     }
 }

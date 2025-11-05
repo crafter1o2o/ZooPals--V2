@@ -25,11 +25,31 @@ namespace ZooPal.Animals
             this.prideSize = prideSize;
             this.isAlpha = isAlpha;
         }
-        override public void DisplayInfo()
+
+        public override MakeSound()
         {
-            base.DisplayInfo();
-            Console.WriteLine($"Pride Size: {prideSize}, Is Alpha: {isAlpha}");
-            return;
+            return "Roar!";
+        }
+
+        public string GetDietType()
+        {
+            return "Carnivore";
+        }
+
+        public double GetFoodAmount()
+        {
+            return Weight * 0.05;
+        }
+
+        public void Feed()
+        {
+            Console.WriteLine($"{Name} the lion has been fed {GetFoodAmount()} kg of meat.");
+        }
+        public void DisplayInfo()
+        {
+            Console.WriteLine($"Name: {Name}, Age: {Age}, Weight: {Weight} kg");
+            Console.WriteLine($"Pride Size: {PrideSize}, Is Alpha: {IsAlpha}");
+            Console.WriteLine($"Habitat: {HabitatType}");
         }
     }
 }

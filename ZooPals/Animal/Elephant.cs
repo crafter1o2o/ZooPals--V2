@@ -19,31 +19,31 @@ namespace ZooPal.Animals
             this.TrunkLength = trunkLength;
             this.TuskLength = tuskLength;
         }
-        
-        /*
+
         public string MakeSound()
         {
-
+            return "Trumpet!";
         }
 
         public string GetDietType()
         {
-
+            return "Herbivore";
         }
 
         public double GetFoodAmount()
         {
-
+            return Weight * 0.05;
         }
         public void Feed()
         {
-
+            Console.WriteLine($"{Name} the elephant has been fed {GetFoodAmount()} kg of hay.");
         }
 
         public void DisplayInfo()
         {
-
+            Console.WriteLine($"Name: {Name}, Age: {Age}, Weight: {Weight} kg");
+            Console.WriteLine($"Trunk Length: {TrunkLength}, Tusk Length: {TuskLength}");
+            Console.WriteLine($"Habitat: {HabitatType}");
         }
-        */
     }
 }

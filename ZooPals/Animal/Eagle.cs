@@ -17,8 +17,32 @@ namespace ZooPal.Animals
         {
             this.DiveSpeed = diveSpeed;
             this.VisualAcuity = visualAcuity;
+
         }
 
+        public string MakeSound()
+        {
 
+        }
+
+        public string GetDietType()
+        {
+
+        }
+
+        public double GetFoodAmount()
+        {
+
+        }
+
+        public void Feed()
+        {
+
+        }
+
+        public void DisplayInfo()
+        {
+
+        }
     }
 }
