@@ -12,8 +12,7 @@ namespace ZooPals.Animal
         public bool isVenomous;
         public int SheddingFrequency;
 
-        public Reptile(String name, int age, double weight, bool healthy, String habitat, bool isColdBlooded, bool hasScales)
-            : base(name, age, weight, healthy, habitat)
+        public Reptile(String name, int age, double weight, bool healthy, String habitat, bool isColdBlooded, bool Venomous, int shedRate) : base(name, age, weight, healthy, habitat)
         {
             this.isColdBlooded = isColdBlooded;
             this.isVenomous = Venomous;

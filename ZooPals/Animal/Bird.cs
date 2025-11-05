@@ -18,6 +18,7 @@ namespace ZooPals.Animal
             this.wingSpan = wingSpan;
             this.EggsPerYear = EggsPerYear;
         }
+
     }
 }
        
