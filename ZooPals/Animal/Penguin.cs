@@ -8,8 +8,8 @@ namespace ZooPals.Animal
 {
     internal class Penguin : Bird
     {
-        public double SwimSpeed;
-        public int ColonySize;
+        public double SwimSpeed { get; set; }
+        public int ColonySize { get; set; }
 
         public Penguin(String name, int age, double weight, bool healthy, String habitat, bool canFly, double wingSpan, int EggsPerYear, double SwimSpeed,int ColonySize):base (name, age, weight, healthy, habitat, canFly, wingSpan, EggsPerYear)
         {
