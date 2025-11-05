@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ZooPals.Animal
+namespace ZooPal.Animal
+namespace ZooPal.Animals
 {
     public abstract class Mammal : Animals
     {
@@ -17,6 +19,12 @@ namespace ZooPals.Animal
             this.isSocial = isSocial;
             this.gestationDays = gestationDays;
 
+        }
+
+        override public void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"Is Social: {isSocial}, Gestation Days: {gestationDays}");
         }
 
 

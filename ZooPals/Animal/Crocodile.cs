@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace ZooPals.Animal
+namespace ZooPal.Animals
 {
 
 	internal class Crocodile : Reptile

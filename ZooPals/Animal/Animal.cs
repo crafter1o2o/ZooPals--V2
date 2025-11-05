@@ -30,7 +30,8 @@ namespace ZooPals.Animal
 
         }
 
-        public double GetFoodAmount()
+        // Make this method overridable by derived classes
+        public virtual void DisplayInfo()
         {
 
         }

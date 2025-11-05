@@ -21,18 +21,23 @@ namespace ZooPal
 
 
             //List for the ALL animals
-            List<String> listAnimals = new List<String>();
+            List<Animal> listAnimals = new List<Animal>();
 
 
 
             //Create the Animal of choice
-            Animal lion1 = new Lion("Leo", 5, 190.5, true, "Savannah", true, 100, 3);
+            Animal Leo = new Lion("Leo", 5, 190.5, true, "Savannah", true, 100, 3,true);
+            Animal Ella = new Elephant("Ella", 10, new Random().Next(2000, 6000), true, "Grassland", true, 640, 2.0, 1.5);
 
 
 
             //Add the animal to the list
             ///I Unfortunately don't know how to automatically add animals to habitats yet, so for now it's manual. -PCB
-            listAnimals.Add(lion1);
+            ///
+            listAnimals.Add(Leo);
+            listAnimals.Add(Ella);
+
+
 
 
 
@@ -70,7 +75,7 @@ namespace ZooPal
                 switch (userInput1)
                 {
                     case "1":
-                        for (int i = 0; i < 1; i++)
+                        for (int i = 0; i < listAnimals.Count(); i++)
                         {
                             Console.WriteLine(listAnimals[i]);
                         }
