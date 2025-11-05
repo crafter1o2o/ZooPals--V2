@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace ZooPals.Animal
+namespace ZooPal.Animal
 {
 
 	internal class Crocodile : Reptile

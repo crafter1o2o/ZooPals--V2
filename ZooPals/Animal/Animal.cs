@@ -10,8 +10,7 @@ namespace ZooPals.Animal
 
         public bool IsHealthy = true;
 
-        public DateTime LastFedTime = DateTime.Now;
-        public string? HabitatType { get; set; }
+        public string? Habitat { get; set; }
 
         // Constructor
         public Animal(string name, int age, double weight, bool isHealthy, string habitatType)
@@ -20,14 +19,14 @@ namespace ZooPals.Animal
             Age = age;
             Weight = weight;
             IsHealthy = isHealthy;
-            HabitatType = habitatType;
+            Habitat = habitatType;
         }
 
         // Make this method overridable by derived classes
         public virtual void DisplayInfo()
         {
             Console.WriteLine(
-                $"Name: {Name}, Age: {Age}, Weight: {Weight} kg, Healthy: {IsHealthy},  Habitat: {HabitatType}"
+                $"Name: {Name}, Age: {Age}, Weight: {Weight} kg, Healthy: {IsHealthy},  Habitat: {Habitat}"
             );
         }
 

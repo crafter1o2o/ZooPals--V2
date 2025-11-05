@@ -12,8 +12,8 @@ namespace ZooPals.Animal
         public double DiveSpeed;
         public double VisualAcuity;
 
-        public Eagle(String name, int age, double weight, bool healthy, String habitat, bool canFly, double wingSpan, double diveSpeed, double visualAcuity)
-            : base(name, age, weight, healthy, habitat, canFly, wingSpan)
+        public Eagle(String name, int age, double weight, bool healthy, String habitat, bool canFly, double wingSpan, double diveSpeed, double visualAcuity, int EggsPerYear)
+            : base(name, age, weight, healthy, habitat, canFly, wingSpan, EggsPerYear)
         {
             this.DiveSpeed = diveSpeed;
             this.VisualAcuity = visualAcuity;

@@ -12,7 +12,7 @@ namespace ZooPals.Animal
         bool isSocial;
         int gestationDays;
 
-        public Mammal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat, bool isSocial, int gestationDays) :base(name ,age, weight, healthy, lastFed, habitat)
+        public Mammal(String name, int age, double weight, bool healthy, String habitat, bool isSocial, int gestationDays) :base(name ,age, weight, healthy, habitat)
         {
             this.isSocial = isSocial;
             this.gestationDays = gestationDays;
