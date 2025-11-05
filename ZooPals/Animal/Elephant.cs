@@ -8,7 +8,7 @@ using ZooPal.Animal;
 using ZooPal.Animal.ZooPal.Animals;
 using ZooPal.Animals;
 
-namespace ZooPal.Animals
+namespace ZooPals.Animal
 {
     internal class Elephant : Mammal
     {

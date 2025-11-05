@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ZooPal.Animals
-namespace Zoopal.Animals
+namespace ZooPals.Animal
 {
-    internal class Penguin
+    internal class Penguin : Bird
     {
         public double SwimSpeed;
         public int ColonySize;

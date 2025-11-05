@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 namespace ZooPal.Animal
 namespace ZooPal.Animals
 {
-    internal class Mammal : Animal {
+    public abstract class Mammal : Animals
+    {
+        
         bool isSocial;
         int gestationDays;
 
-        public Mammal(String name, int age, double weight, bool healthy, String habitat, bool isSocial, int gestationDays) 
-            : base(name, age, weight, healthy, habitat)
+        public Mammal(String name, int age, double weight, bool healthy, DateTime lastFed, String habitat, bool isSocial, int gestationDays) :base(name ,age, weight, healthy, lastFed, habitat, name)
         {
             this.isSocial = isSocial;
             this.gestationDays = gestationDays;
+
         }
 
         override public void DisplayInfo()
