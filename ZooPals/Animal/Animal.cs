@@ -21,7 +21,11 @@ namespace ZooPals.Animal
             IsHealthy = isHealthy;
             Habitat = habitatType;
         }
-
+        public virtual void MakeSound()
+        {
+            Console.WriteLine("Some generic animal sound");
+            return;
+        }
         // Make this method overridable by derived classes
         public virtual void DisplayInfo()
         {
@@ -35,7 +39,16 @@ namespace ZooPals.Animal
 
         public void PerformHealthCheck()
         {
+            if (IsHealthy == false)
+            {
+                Console.WriteLine($"{Name} is not healthy and needs medical attention.");
+                IsHealthy = true;
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is healthy.");
 
+            }
         }
 
         public void UpdateHealth(bool healthStatus)

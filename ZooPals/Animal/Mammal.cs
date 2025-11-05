@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooPals.Animal
 {
-    public abstract class Mammal : Animal
+    abstract class Mammal : Animal
     {
         
         bool isSocial;
@@ -25,6 +25,7 @@ namespace ZooPals.Animal
             Console.WriteLine($"Is Social: {isSocial}, Gestation Days: {gestationDays}");
         }
 
+        override public abstract void MakeSound();
 
 
 

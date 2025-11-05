@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using ZooPals.Animal;
 
+
 namespace ZooPals.Animal
 {
     internal class Elephant : Mammal
@@ -20,11 +21,12 @@ namespace ZooPals.Animal
             this.TuskLength = tuskLength;
         }
 
-        public string MakeSound()
+        override
+            public void MakeSound()
         {
-            return "Trumpet!";
+            Console.WriteLine("TRUMPET!");
+            return;
         }
-
         public string GetDietType()
         {
             return "Herbivore";

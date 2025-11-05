@@ -14,12 +14,15 @@ namespace ZooPals.Habitat
 
         public Savanna(string name, int capacity, double size)
         {
-
+            this.Name = name;
+            this.Capacity = capacity;
+            this.Size = size;
+            return;
         }
 
         public CanAccommodate(Animal animal, double size)
         {
-
+            return true;
         }
 
         public void AddAnimal()

@@ -12,13 +12,6 @@ namespace ZooPals.Animal
         public int prideSize;
         bool isAlpha;
 
-        private string v1;
-        private int v2;
-        private double v3;
-        private bool v4;
-        private DateTime dateTime;
-        private string v6;
-
         public Lion(string name, int age, double weight, bool healthy, String habitat, bool isSocial, int gestationDays, int prideSize, bool isAlpha) 
             : base(name, age, weight, healthy, habitat, isSocial, gestationDays)
         {
@@ -26,9 +19,11 @@ namespace ZooPals.Animal
             this.isAlpha = isAlpha;
         }
 
-        public override abstract MakeSound()
+        override 
+            public void MakeSound()
         {
             Console.WriteLine("Roar!");
+            return;
         }
 
         public string GetDietType()
@@ -38,7 +33,7 @@ namespace ZooPals.Animal
 
         public double GetFoodAmount()
         {
-            return Weight * 0.05;
+            return Weight * 0.25;
         }
 
         public void Feed()
