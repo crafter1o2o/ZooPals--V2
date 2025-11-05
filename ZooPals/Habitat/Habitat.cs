@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ZooPals.Habitat
 {
-    internal class Habitat : Habitat
+    internal class Habitat
     {
         public string Name;
         public string Type;
