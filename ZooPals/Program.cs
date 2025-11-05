@@ -22,13 +22,14 @@ namespace ZooPal
         {
 
 
+
             //List for the ALL animals
             List<Animal> listAnimals = new List<Animal>();
 
 
 
             //Create the Animal of choice
-            Animal Leo = new Lion("Leo", 5, 190.5, true, "Savannah", true, 100, 3,true);
+            Lion Leo = new Lion("Leo", 5, 190.5, true, "Savannah", true, 100, 3,true);
             Animal Ella = new Elephant("Ella", 10, new Random().Next(2000, 6000), true, "Grassland", true, 640, 2.0, 1.5);
             Animal Corrie = new Eagle("Corrie", 4, 15.0, true, "Mountains", true, 2.0, 320.0, 8.0, 4);
             Animal Koda  = new Crocodile("Koda", 7, 500.0, true, "Swamp", true, false, 5, 2000.0, 60);
@@ -53,6 +54,7 @@ namespace ZooPal
             listAnimals.Add(Manny);
 
             Ella.MakeSound();
+
 
 
 
@@ -175,7 +177,7 @@ namespace ZooPal
                         break;
                     case "8":
                         //Emergency Evacuation Drill
-                        //EmergencyEvacuation();
+                        EmergencyEvacuation();
 
                         Console.Clear();
 
@@ -194,6 +196,7 @@ namespace ZooPal
                 }
             }
         }
+
 
 
 
@@ -237,11 +240,17 @@ namespace ZooPal
 
         }
 
-        public void EmergencyEvacuation()
+         public void EmergencyEvacuation()
         {
+            
             Console.WriteLine($"A fire has been detected!");
-            Console.WriteLine($"{Lion} has been evacuated!");
+            Console.WriteLine($"Leo has been evacuated!");
+            Console.WriteLine($"Corrie has been evacuated!");
+            Console.WriteLine($"Ella has been evacuated!");
+            Console.WriteLine($"Koda has been evacuated!");
+            Console.WriteLine($"Manny has been evacuated!");
 
         }
+
     }
 }
