@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using ZooPal.Animals;
+
 
 namespace ZooPals.Animal
 {
@@ -20,11 +20,12 @@ namespace ZooPals.Animal
             this.TuskLength = tuskLength;
         }
 
-        public string MakeSound()
+        override
+            public void MakeSound()
         {
-            return "Trumpet!";
+            Console.WriteLine("TRUMPET!");
+            return;
         }
-
         public string GetDietType()
         {
             return "Herbivore";

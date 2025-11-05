@@ -5,8 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZooPal;
+using ZooPals.Animal;
 
-using ZooPal.Animals;
+
 
 namespace ZooPal
 {
@@ -28,14 +29,25 @@ namespace ZooPal
             //Create the Animal of choice
             Animal Leo = new Lion("Leo", 5, 190.5, true, "Savannah", true, 100, 3,true);
             Animal Ella = new Elephant("Ella", 10, new Random().Next(2000, 6000), true, "Grassland", true, 640, 2.0, 1.5);
-
-
+            Animal Corrie = new Eagle("Corrie", 4, 15.0, true, "Mountains", true, 2.0, 320.0, 8.0, 4);
+            Animal Koda  = new Crocodile("Koda", 7, 500.0, true, "Swamp", true, false, 5, 2000.0, 60);
+            Animal Manny = new Penguin("Manny", 3, 30.0, true, "Arctic", false, 0.5, 20, 10.0, 50);
+            
+            Leo.DisplayInfo();
+            Ella.DisplayInfo();
+            Corrie.DisplayInfo();
+            Koda.DisplayInfo();
+            Manny.DisplayInfo();
+            
 
             //Add the animal to the list
             ///I Unfortunately don't know how to automatically add animals to habitats yet, so for now it's manual. -PCB
             ///
             listAnimals.Add(Leo);
             listAnimals.Add(Ella);
+            listAnimals.Add(Corrie);
+            listAnimals.Add(Koda);
+            listAnimals.Add(Manny);
 
 
 
@@ -143,7 +155,7 @@ namespace ZooPal
 
         public void DisplayAllAnimals()
         {
-
+            
         }
 
         public void DisplayAllHabitats()
