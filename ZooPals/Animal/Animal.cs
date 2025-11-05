@@ -25,9 +25,7 @@ namespace ZooPals.Animal
         // Make this method overridable by derived classes
         public virtual void DisplayInfo()
         {
-            Console.WriteLine(
-                $"Name: {Name}, Age: {Age}, Weight: {Weight} kg, Healthy: {IsHealthy},  Habitat: {Habitat}"
-            );
+            Console.WriteLine($"Name: {Name}, Age: {Age}, Weight: {Weight} kg, Healthy: {IsHealthy},  Habitat: {Habitat}");
         }
 
         public void Feed()

@@ -26,9 +26,9 @@ namespace ZooPals.Animal
             this.isAlpha = isAlpha;
         }
 
-        public override MakeSound()
+        public override abstract MakeSound()
         {
-            return "Roar!";
+            Console.WriteLine("Roar!");
         }
 
         public string GetDietType()
@@ -47,9 +47,8 @@ namespace ZooPals.Animal
         }
         public void DisplayInfo()
         {
-            Console.WriteLine($"Name: {Name}, Age: {Age}, Weight: {Weight} kg");
-            Console.WriteLine($"Pride Size: {PrideSize}, Is Alpha: {IsAlpha}");
-            Console.WriteLine($"Habitat: {HabitatType}");
+            base.DisplayInfo();
+            Console.WriteLine($"Pride Size: {prideSize}, Is Alpha: {isAlpha}");
         }
     }
 }

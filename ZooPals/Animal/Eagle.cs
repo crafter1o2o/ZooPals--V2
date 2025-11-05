@@ -32,7 +32,7 @@ namespace ZooPals.Animal
 
         public double GetFoodAmount()
         {
-            return Weight * 0.1;
+            return Weight * 0.25;
         }
 
         public void Feed()

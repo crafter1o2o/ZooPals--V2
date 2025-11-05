@@ -31,7 +31,7 @@ namespace ZooPal
             isRecentlyFed = true;
         }
 
-        public void PerfoemHealthCheck()
+        public void PerformHealthCheck()
         {
 
         }

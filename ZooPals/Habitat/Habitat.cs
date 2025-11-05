@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ZooPal.Habitat
+namespace ZooPals.Habitat
 {
     internal class Habitat : Habitat
     {

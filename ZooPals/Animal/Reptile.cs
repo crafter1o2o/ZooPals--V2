@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ZooPals.Animal
 {
-    internal class Reptile : Animal
+    internal abstract class Reptile : Animal
     {
         public bool isColdBlooded;
         public bool isVenomous;

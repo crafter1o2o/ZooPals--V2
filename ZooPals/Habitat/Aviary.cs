@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ZooPal.Habitat
+namespace ZooPals.Habitat
 {
     internal class Aviary : Habitat
     {
 
-        public double FlightHeight();
+        public double FlightHeight;
         public int PerchCount;
         public bool HasNettingRoof;
 

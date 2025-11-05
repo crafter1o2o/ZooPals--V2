@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using ZooPal.Animals;
+using ZooPals.Animal;
 
 namespace ZooPals.Animal
 {
