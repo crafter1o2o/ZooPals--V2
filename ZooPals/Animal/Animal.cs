@@ -32,8 +32,11 @@ namespace ZooPals.Animal
             Console.WriteLine($"Name: {Name}, Age: {Age}, Weight: {Weight} kg, Healthy: {IsHealthy},  Habitat: {Habitat}");
         }
 
-        public void Feed()
+        public virtual void Feed()
+        
         {
+            Console.WriteLine($"{this.Name} has been fed some food ");
+
 
         }
 

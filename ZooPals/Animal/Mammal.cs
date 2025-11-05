@@ -25,7 +25,8 @@ namespace ZooPals.Animal
             Console.WriteLine($"Is Social: {isSocial}, Gestation Days: {gestationDays}");
         }
 
-        override public abstract void MakeSound();
+        override public void MakeSound() { base.MakeSound(); }
+
 
 
 

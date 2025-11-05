@@ -39,6 +39,7 @@ namespace ZooPal
             Habitat Sav = new Savanna("Savanna", "Open Area", 5, 86.0, 123.45, 54.87,3);
             Habitat Air = new Aviary("Avairay","Building", 8, 77.0, 8000.0, 4000.00, 40, true);
             Habitat Swa = new Aquarium("Swamp", "Wetland", 4, 75.0, 6000.0, 12.0,0.0,true);
+            
 
 
 
@@ -50,6 +51,8 @@ namespace ZooPal
             listAnimals.Add(Corrie);
             listAnimals.Add(Koda);
             listAnimals.Add(Manny);
+
+            Ella.MakeSound();
 
 
 
@@ -109,25 +112,24 @@ namespace ZooPal
 
 
                     case "2":
+                        //Display Habitats
                         Sav.DisplayInfo();
                         Air.DisplayInfo(); 
                         Swa.DisplayInfo();
                     
                         
                         
-                        
-                        
-                        //Display Habitats
+                     
                         userInput = Console.ReadLine();
                         Console.Clear();
                         //Console.WriteLine(savannahHabitat.displayInfo());
-                        //Currently, no animals being made are being adding animals to habitat, fix that somehow, figuture it out soon.
                         break;
                     
                     
                     
                     
                     case "3":
+                    //Feed All Animals
                         Ella.Feed();
                         Leo.Feed();
                         Corrie.Feed();                        
@@ -136,9 +138,9 @@ namespace ZooPal
 
                         userInput = Console.ReadLine();
                         Console.Clear();
-                        //Feed All Animals
                         break;
                     case "4":
+                     //Perform Health Checks
                         Ella.PerformHealthCheck();
                         Leo.PerformHealthCheck();
                         Corrie.PerformHealthCheck();
@@ -148,18 +150,25 @@ namespace ZooPal
 
                         userInput = Console.ReadLine();
                         Console.Clear();
-                        //Perform Health Checks
                         break;
 
+                        Console.Clear();
+                    //Add New Animal
                     case "5":
 
                         Console.Clear();
-                        //Add New Animal
+                        //Generate Daily Report
                         break;
+
                     case "6":
 
+                        Animal.MakeSound();
+                        Mammal.MakeSound();
+                        Lion.MakeSound();
                         Console.Clear();
-                        //Generate Daily Report
+                        //Demonstrate Polymorphism
+
+
                         break;
                     case "7":
 
@@ -188,7 +197,22 @@ namespace ZooPal
             }
         }
 
+        static void DemonstratePolyMorphism()
+        {
+            Console.WriteLine("Polymorphism");
+            foreach (var animal in preserve.Animals)
+            {
+                ProcessAnimalPolymorphism(animal);
+            }
+        }
 
+        static void ProcessAnimalPolymorphism(Animal animal)
+        {
+            Console.WriteLine($"\nProcessing {animal.Name} ({animal.GetType().Name}):");
+            animal.MakeSound();
+            animal.GetDietType();
+            animal.Feed();
+        }
 
         public void DisplayAllAnimals()
         {

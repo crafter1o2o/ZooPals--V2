@@ -5,17 +5,21 @@ namespace ZooPals.Habitat
 {
     internal class Habitat
     {
-        public string Name;
-        public string Type;
-        public int Capacity;
-        public double Temperature;
-        public double Size;
+        public string Name { get; set; }
+        public string Type { get;  set; }
+        public int Capacity { get; set; }
+        public double Temperature { get; set; }
+        public double Size { get; set; }
 
         List<String> Animals = new List<String>();
 
         public Habitat(string name, string type, int capacity, double temperature, double size)
         {
-
+            this.Name = name;
+            this.Type = type;
+            this.Capacity = capacity;
+            this.Temperature = temperature;
+            this.Size = size;
         }
 
         public virtual void CanAccommodate()

@@ -19,7 +19,6 @@ namespace ZooPals.Animal
             this.isAlpha = isAlpha;
         }
 
-        override 
             public void MakeSound()
         {
             Console.WriteLine("Roar!");

@@ -8,9 +8,10 @@ namespace ZooPals.Animal
 {
     internal class Bird : Animal
     {
-        bool canFly;
-        double wingSpan;
-        public int EggsPerYear;
+        bool canFly { get; set; }
+        double wingSpan { get; set; }
+        public int EggsPerYear { get; set; }
+
         public Bird(String name, int age, double weight, bool healthy, String habitat, bool canFly, double wingSpan, int EggsPerYear)
         : base(name, age, weight, healthy, habitat)
         {
