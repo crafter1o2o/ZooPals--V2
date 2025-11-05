@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ZooPals.Animal
-namespace ZooPal.Animal
-namespace ZooPal.Animals
 {
     public abstract class Mammal : Animals
     {
