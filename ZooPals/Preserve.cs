@@ -23,7 +23,17 @@ namespace ZooPal
             return;
 
         }
+        public static void EmergencyEvacuation()
+        {
 
+            Console.WriteLine($"A fire has been detected!");
+            Console.WriteLine($"Leo has been evacuated!");
+            Console.WriteLine($"Corrie has been evacuated!");
+            Console.WriteLine($"Ella has been evacuated!");
+            Console.WriteLine($"Koda has been evacuated!");
+            Console.WriteLine($"Manny has been evacuated!");
+
+        }
 
 
         public void feedAllAnimals()
@@ -51,12 +61,6 @@ namespace ZooPal
         {
 
         }
-
-        public void EmergencyEvacuation()
-        {
-
-        }
-
 
 
 

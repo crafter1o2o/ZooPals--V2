@@ -21,7 +21,7 @@ namespace ZooPal
         static void Main(string[] args)
         {
 
-
+            Preserve Wildlife = new Preserve("Wildlife Preserve");
 
             //List for the ALL animals
             List<Animal> listAnimals = new List<Animal>();
@@ -177,8 +177,8 @@ namespace ZooPal
                         break;
                     case "8":
                         //Emergency Evacuation Drill
-                        EmergencyEvacuation();
-
+                        Preserve.EmergencyEvacuation();
+                        userInput = Console.ReadLine();
                         Console.Clear();
 
                         break;
@@ -240,17 +240,7 @@ namespace ZooPal
 
         }
 
-         public void EmergencyEvacuation()
-        {
-            
-            Console.WriteLine($"A fire has been detected!");
-            Console.WriteLine($"Leo has been evacuated!");
-            Console.WriteLine($"Corrie has been evacuated!");
-            Console.WriteLine($"Ella has been evacuated!");
-            Console.WriteLine($"Koda has been evacuated!");
-            Console.WriteLine($"Manny has been evacuated!");
 
-        }
 
     }
 }
