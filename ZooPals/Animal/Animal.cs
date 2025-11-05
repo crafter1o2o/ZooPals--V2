@@ -44,15 +44,7 @@ namespace ZooPal.Animals
         public void PerformHealthCheck()
         {
 
-        public Animals(string name, int age, double weight, bool IsHealthy, string HabitatType)
-        {
-            this.Name = name;
-            this.Age = age;
-            this.Weight = weight;
-            this.IsHealthy = IsHealthy;
-            this.HabitatType = HabitatType;
         }
-        */
 
         public void UpdateHealth(bool healthStatus)
         {
@@ -61,11 +53,3 @@ namespace ZooPal.Animals
         }
     }
 }
-
-        public void DisplayInfo()
-        {
-
-        }
-    }
-}
->>>>>>>>> Temporary merge branch 2
